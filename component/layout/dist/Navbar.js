@@ -71,6 +71,6 @@ var Navbar = function () {
                         link.name,
                         React.createElement(io_1.IoIosArrowForward, { className: "h-4 w-4" })),
                     link.children && (React.createElement("div", { className: "ml-4 mt-1 flex flex-col gap-3 border-l border-gray-200 pl-4" }, link.children.map(function (child) { return (React.createElement(link_1["default"], { key: child.path, href: child.path, onClick: function () { return setMenuOpen(false); }, className: "text-sm py-2 text-gray-600 hover:text-[var(--accent)] transition" }, child.name)); }))))); }),
-                React.createElement(Button_1["default"], { title: "GET IN TOUCH", className: "bg-red hover:bg-red text-white", onClick: function () { return router.push("/contact"); } }))))));
+                React.createElement(Button_1["default"], { title: "GET IN TOUCH", className: "bg-green-600 hover:bg-green-700 text-white", onClick: function () { return router.push("/contact"); } }))))));
 };
 exports["default"] = Navbar;

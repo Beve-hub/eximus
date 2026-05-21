@@ -182,7 +182,7 @@ const Navbar = () => {
 
             <Button
               title="GET IN TOUCH"
-              className="bg-red hover:bg-red text-white"
+              className="bg-green-600 hover:bg-green-700 text-white"
               onClick={() => router.push("/contact")}
             />
           </div>
