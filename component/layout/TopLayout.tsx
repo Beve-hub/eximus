@@ -20,7 +20,6 @@ const TopLayout: React.FC<TopLayoutProps> = ({
   height = 'h-[300px]',
   overlayOpacity = 0.65,
 }) => {
-  // Static / unchangeable background image
   const backgroundImage = '/assests/topbg2.jpg';   // ← Change this path to your image
 
   return (
@@ -37,9 +36,9 @@ const TopLayout: React.FC<TopLayoutProps> = ({
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         {/* Hero Title */}
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight tracking-tighter">
+        <p className="text-5xl md:text-6xl lg:text-5xl font-semibold text-white leading-tight tracking-tighter">
           {heroTitle}
-        </h1>
+        </p>
         {/* Breadcrumb */}
         <div className="flex items-center justify-center gap-2 text-white/90 text-sm md:text-base mb-6 tracking-widest uppercase">
           {subtitle && (

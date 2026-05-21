@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 import { MdMenu, MdOutlineCancel } from "react-icons/md";
 import { IoIosArrowForward, IoIosArrowDown } from "react-icons/io";
@@ -12,7 +12,7 @@ const Navbar = () => {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
+  const router = useRouter();
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 10);
     window.addEventListener("scroll", handleScroll);
@@ -54,7 +54,9 @@ const Navbar = () => {
   return (
     <nav
       className={`sticky top-0 z-50 transition-all duration-300 ${
-        scrolled ? "backdrop-blur-md bg-[var(--label-fg)]/50" : "bg-[var(--color-background)]"
+        scrolled
+          ? "backdrop-blur-md bg-[var(--label-fg)]/50"
+          : "bg-[var(--color-background)]"
       }`}
       style={{ color: "var(--input-bg)" }}
     >
@@ -128,10 +130,11 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex">
-             <Button 
-            title="GET IN TOUCH" 
-            className="bg-[var(--background)] hover:bg-green-700 text-white"
-            onClick={() => alert('Clicked!')} />
+            <Button
+              title="GET IN TOUCH"
+              className="bg-green-600 hover:bg-green-700 text-white"
+              onClick={() => router.push("/contact")}
+            />
           </div>
 
           {/* Mobile Menu Button */}
@@ -182,9 +185,11 @@ const Navbar = () => {
               </div>
             ))}
 
-             <Button 
-            title="GET IN TOUCH" 
-            onClick={() => alert('Clicked!')} />
+            <Button
+              title="GET IN TOUCH"
+              className="bg-green-600 hover:bg-green-700 text-white"
+              onClick={() => router.push("/contact")}
+            />
           </div>
         )}
       </div>

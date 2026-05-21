@@ -1,7 +1,11 @@
+'use client';
+
+import { useRouter } from 'next/navigation';
 import Button from '@/component/ui/button/Button';
-import React from 'react';
+
 
 const HeroContent: React.FC = () => {
+   const router = useRouter();
   return (
     <div className="relative z-20 h-full flex items-center px-6 md:px-16 lg:px-30">
       <div className="max-w-2xl text-left">
@@ -14,10 +18,11 @@ const HeroContent: React.FC = () => {
         </p>
 
         <div className="mt-10">
-          <Button 
-            title="GET IN TOUCH" 
-            className="bg-green-600 hover:bg-green-700 text-white"
-            onClick={() => alert('Clicked!')} />
+         <Button
+        title="GET IN TOUCH"
+        className="bg-green-600 hover:bg-green-700 text-white"
+        onClick={() => router.push('/contact')}
+      />
         </div>
       </div>
     </div>
