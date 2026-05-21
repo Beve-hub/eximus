@@ -1,26 +1,47 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ← Required so any future `dark:bg-...` classes work */
+@custom-variant dark (&:where(.dark, .dark *));
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
+    --background: #043a1f;
     --foreground: #ededed;
-  }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    --color-background: #ffffff;
+    --color-foreground: oklch(0.98 0.02 260);
+    --color-primary: oklch(91.932% 0.13592 153.639);
+
+    /* ── Contact modal / BookingForm tokens (dark) ── */
+    --modal-bg: #0a0a0a;
+    --modal-border-top: rgba(250, 204, 21, 0.25);
+
+    --accent: #1bf503;
+    --accent-hover: #0ac73c;
+
+    --input-bg: #171717;
+    --input-fg: #ffffff;
+    --input-border: #262626;
+    --input-placeholder: #525252;
+
+    --label-fg: #dfdfdf;
+    --subtext-fg: #525252;
+
+    --icon-btn-border: #262626;
+    --icon-btn-fg: #737373;
+
+    --handle-bg: #262626;
+
+    --social-fg: #737373;
+  }
+
+  body {
+    background: var(--color-background);
+    color: var(--color-foreground);
+    font-family:
+      "Poppins",
+      system-ui,
+      -apple-system,
+      sans-serif;
+  }
 }
