@@ -1,7 +1,6 @@
 import Footer from "@/component/layout/Footer";
 import Navbar from "@/component/layout/Navbar";
 import React from "react";
-import AboutContent from "../home/AboutContent";
 import TopLayout from "@/component/layout/TopLayout";
 import Profile from "./component/Profile";
 import Company from "./component/Company";

@@ -127,7 +127,7 @@ const Navbar = () => {
           <div className="hidden md:flex">
             <Button
               title="GET IN TOUCH"
-              className="bg-green-600 hover:bg-green-700 text-white"
+              className="bg-red hover:bg-red text-white"
               onClick={() => router.push("/contact")}
             />
           </div>
@@ -138,7 +138,7 @@ const Navbar = () => {
               aria-label="Toggle menu"
               onClick={() => setMenuOpen((prev) => !prev)}
               className="p-2 rounded-xl transition"
-              style={{ color: "var(--foreground)" }}
+              style={{ color: "var(--background)" }}
             >
               {menuOpen ? (
                 <MdOutlineCancel className="h-6 w-6" />
@@ -182,7 +182,7 @@ const Navbar = () => {
 
             <Button
               title="GET IN TOUCH"
-              className="bg-green-600 hover:bg-green-700 text-white"
+              className="bg-red hover:bg-red text-white"
               onClick={() => router.push("/contact")}
             />
           </div>

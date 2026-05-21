@@ -42,10 +42,10 @@ const ValuesContent: React.FC = () => {
             <FaHandshake className="text-lg" />
             OUR COMMITMENT
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <p className="text-3xl font-light md:text-5xl font-bold text-gray-900 mb-4">
             Values and Commitments
-          </h2>
-          <p className="max-w-2xl mx-auto text-xl text-gray-600 leading-relaxed">
+          </p>
+          <p className="max-w-xl mx-auto text-xl text-gray-600 leading-relaxed">
             Disciplined execution with <span className="text-green-600 font-semibold">people</span>, 
             <span className="text-green-600 font-semibold"> environment</span>, and 
             <span className="text-green-600 font-semibold"> performance</span> at the center.
@@ -59,7 +59,7 @@ const ValuesContent: React.FC = () => {
               key={index}
               className="group bg-white border border-gray-100 hover:border-green-200 rounded-3xl p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
             >
-              <div className="w-14 h-14 flex items-center justify-center bg-green-50 text-green-600 rounded-2xl mb-6 group-hover:bg-green-100 transition-colors">
+              <div className="w-14 h-14 flex items-center justify-center bg-red-50 text-red-700 rounded-2xl mb-6 transition-colors">
                 <item.icon className="text-3xl" />
               </div>
               
