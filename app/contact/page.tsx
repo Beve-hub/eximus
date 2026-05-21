@@ -1,5 +1,5 @@
 "use client";
-import { useRouter } from 'next/navigation'
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { MdEmail, MdPhone } from "react-icons/md";
 import { IoLogoWhatsapp, IoCheckmarkCircle } from "react-icons/io5";
@@ -55,7 +55,7 @@ function ContactForm() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
-const router = useRouter();
+  const router = useRouter();
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -164,12 +164,11 @@ const router = useRouter();
         />
       </div>
 
-<Button
+      <Button
         title=" Send Message"
         className="w-full bg-[var(--background)] hover:bg-green-700 text-white"
         onClick={handleSubmit}
       />
-    
     </div>
   );
 }

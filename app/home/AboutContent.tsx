@@ -33,7 +33,7 @@ const AboutContent = () => {
         {/* ── Top: Welcome heading + intro text ── */}
         <div className="grid md:grid-cols-12 gap-10 items-center pb-12 border-b border-[var(--accent)]/20">
           <div className="md:col-span-5">
-            <p className="font-serif text-5xl font-light leading-[1.05] text-[var(--input-border)]">
+            <p className=" text-5xl font-light leading-[1.05] text-[var(--input-border)]">
               Welcome to <br />
               <span className="text-[var(--accent)] italic font-normal">
                 Eximus
@@ -41,7 +41,7 @@ const AboutContent = () => {
             </p>
           </div>
           <div className="md:col-span-7">
-            <p className="text-[16px] leading-relaxed text-[var(--input-border)]">
+            <p className="text-[16px] font-light leading-relaxed text-[var(--input-border)]">
               We are a Nigerian-focused integrated energy and EPCM company
               delivering engineering, procurement, construction, project
               management, and strategic advisory services across the full oil
@@ -60,10 +60,10 @@ const AboutContent = () => {
                 About Us
               </p>
             </div>
-            <p className="font-serif text-3xl font-light text-[var(--background)] mb-5 tracking-wide uppercase">
+            <p className=" text-3xl font-light text-[var(--background)] mb-5 tracking-wide uppercase">
               WHO WE ARE
             </p>
-            <p className="text-[16px] leading-relaxed text-[var(--input-border)] mb-8">
+            <p className="text-[16px] font-light leading-relaxed text-[var(--input-border)] mb-8">
               Eximus Energy is led and supported by seasoned professionals with
               broad upstream, midstream, downstream, project management,
               operations and asset development experience in Nigeria and around
@@ -80,7 +80,7 @@ const AboutContent = () => {
                     <p className="text-[16px] font-semibold text-[var(--background)] mb-1">
                       {p.title}
                     </p>
-                    <p className="text-[16px] leading-relaxed text-[var(--input-border)]">
+                    <p className="text-[16px] font-light leading-relaxed text-[var(--input-border)]">
                       {p.desc}
                     </p>
                   </div>
@@ -109,7 +109,7 @@ const AboutContent = () => {
               <p className="text-[10px] tracking-[0.16em] uppercase text-[var(--accent)] opacity-70 mb-1">
                 Oil &amp; Gas Infrastructure
               </p>
-              <p className="font-serif text-[16px] font-light text-[var(--color-foreground)] leading-snug">
+              <p className="text-[16px] font-light text-[var(--color-foreground)] leading-snug">
                 Nigerian upstream &amp; midstream excellence
               </p>
             </div>

@@ -24,11 +24,6 @@ const Navbar = () => {
     {
       name: "About",
       path: "/about",
-      children: [
-        { name: "Corporate Profile", path: "/about/profile" },
-        { name: "Company", path: "/about/company" },
-        { name: "Values & Commitment", path: "/about/values" },
-      ],
     },
     {
       name: "Services",

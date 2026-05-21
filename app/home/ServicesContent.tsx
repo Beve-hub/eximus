@@ -1,31 +1,37 @@
-import React from 'react'
+import React from "react";
 
 const services = [
   {
-    num: '01', title: 'Engineering',
-    desc: 'Concept studies, FEED, detailed engineering, design review, debottlenecking, brownfield modifications and integrated facilities engineering.',
+    num: "01",
+    title: "Engineering",
+    desc: "Concept studies, FEED, detailed engineering, design review, debottlenecking, brownfield modifications and integrated facilities engineering.",
   },
   {
-    num: '02', title: 'Procurement',
-    desc: 'Strategic sourcing, OEM coordination, vendor evaluation, surplus equipment sourcing, inspection coordination and import logistics support.',
+    num: "02",
+    title: "Procurement",
+    desc: "Strategic sourcing, OEM coordination, vendor evaluation, surplus equipment sourcing, inspection coordination and import logistics support.",
   },
   {
-    num: '03', title: 'Construction',
-    desc: 'Brownfield and greenfield construction, pipeline and flowline works, facility upgrades, hook-up, commissioning and site execution support.',
+    num: "03",
+    title: "Construction",
+    desc: "Brownfield and greenfield construction, pipeline and flowline works, facility upgrades, hook-up, commissioning and site execution support.",
   },
   {
-    num: '04', title: 'Project Management',
-    desc: 'Planning, scheduling, cost control, interface management, contract administration, risk management, reporting and stakeholder coordination.',
+    num: "04",
+    title: "Project Management",
+    desc: "Planning, scheduling, cost control, interface management, contract administration, risk management, reporting and stakeholder coordination.",
   },
   {
-    num: '05', title: 'Operations Support',
-    desc: 'Asset integrity, maintenance planning, operational readiness, troubleshooting, facility audits and reliability improvement.',
+    num: "05",
+    title: "Operations Support",
+    desc: "Asset integrity, maintenance planning, operational readiness, troubleshooting, facility audits and reliability improvement.",
   },
   {
-    num: '06', title: 'Strategic Advisory',
+    num: "06",
+    title: "Strategic Advisory",
     desc: "Due diligence, owner's engineering, asset acquisition support, technical evaluation and independent project review.",
   },
-]
+];
 
 const ServicesContent = () => {
   return (
@@ -38,7 +44,7 @@ const ServicesContent = () => {
               What we do
             </p>
           </div>
-          <h2 className="font-serif text-[38px] font-normal text-[var(--foreground)] leading-tight">
+          <h2 className="text-[38px] font-normal text-[var(--foreground)] leading-tight">
             Our Services
           </h2>
         </div>
@@ -65,14 +71,13 @@ const ServicesContent = () => {
             />
 
             {/* Gold top accent line on hover */}
-            <div
-              className="absolute top-0 left-0 right-0 h-[2px] z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              
-            />
+            <div className="absolute top-0 left-0 right-0 h-[2px] z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
             <div className="relative z-10">
               <div className="w-10 h-10 border border-[var(--foreground)]/40 flex items-center justify-center mb-6 bg-[var(--background)]/5">
-                <span className=" text-[var(--foreground)] text-sm font-mono">{num}</span>
+                <span className=" text-[var(--foreground)] text-sm font-mono">
+                  {num}
+                </span>
               </div>
               <h3 className="text-[15px] font-medium text-[var(--foreground)] mb-2 tracking-wide">
                 {title}
@@ -85,7 +90,7 @@ const ServicesContent = () => {
         ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ServicesContent
+export default ServicesContent;

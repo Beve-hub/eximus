@@ -23,12 +23,7 @@ var Navbar = function () {
         { name: "Home", path: "/" },
         {
             name: "About",
-            path: "/about",
-            children: [
-                { name: "Corporate Profile", path: "/about/profile" },
-                { name: "Company", path: "/about/company" },
-                { name: "Values & Commitment", path: "/about/values" },
-            ]
+            path: "/about"
         },
         {
             name: "Services",
