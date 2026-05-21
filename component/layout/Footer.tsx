@@ -3,11 +3,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { navLinks } from "./data";
-import Logo1 from "../../public/assests/Logo.png";
+import Logo1 from "../../public/assests/Logo white.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0a0f1c] border-t border-amber-500/10 pt-16 pb-12">
+    <footer className="bg-[var(--background)] border-t border-amber-500/10 pt-16 pb-12">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 md:px-16">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-12">
           
