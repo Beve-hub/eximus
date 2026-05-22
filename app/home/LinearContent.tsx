@@ -6,10 +6,10 @@ const LinearContent = () => {
         <div>
             {/* CTA Section */}
             <div className='flex flex-col items-center justify-center text-center py-20 px-6'>
-                <h2 className='text-4xl text-[var(--background)] max-w-lg font-bold tracking-tight mb-3'>
+                <h2 className='text-4xl text-[var(--background)] max-w-xl font-bold tracking-tight mb-3'>
                     Get a Solutions for All Industries
                 </h2>
-                <p className='text-base text-gray-500 max-w-lg mb-8'>
+                <p className='text-base text-gray-500 max-w-xl mb-8'>
                     We provide innovative solutions for sustainable progress. Our professional team works to increase productivity and cost effectiveness on the market.
                 </p>
                <Button 

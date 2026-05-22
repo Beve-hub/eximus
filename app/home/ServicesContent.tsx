@@ -22,7 +22,7 @@ const ServicesContent = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-3 gap-px bg-[var(--foreground)]/10 border border-white/5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-px bg-[var(--foreground)]/10 border border-white/5">
         {services.map((service) => (
           <ServiceCard
             key={service.num}

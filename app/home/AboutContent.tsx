@@ -32,10 +32,10 @@ const AboutContent = () => {
       <div className="max-w-6xl mx-auto">
         {/* ── Top: Welcome heading + intro text ── */}
         <div className="grid md:grid-cols-12 gap-10 items-center pb-12 border-b border-[var(--accent)]/20">
-          <div className="md:col-span-5">
-            <p className=" text-5xl font-light leading-[1.05] text-[var(--input-border)]">
+          <div className=" border-r border-gray-300  md:col-span-5">
+            <p className=" text-4xl font-light leading-[1.05] text-[var(--input-border)]">
               Welcome to <br />
-              <span className="text-[var(--accent)] italic font-normal">
+              <span className="text-[var(--accent)] font-normal">
                 Eximus
               </span>
             </p>
