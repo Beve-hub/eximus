@@ -36,10 +36,10 @@ const Company = () => {
             About Us
           </p>
         </div>
-        <p className=" text-3xl font-light text-[var(--background)] mb-5 tracking-wide uppercase">
+        <h2 className="text-3xl md:text-4xl font-black uppercase leading-none tracking-tight text-gray-900 mb-5">
           WHO WE ARE
-        </p>
-        <p className="text-[16px] leading-relaxed text-[var(--input-border)] mb-8">
+        </h2>
+        <p className="text-sm text-gray-500 leading-relaxed max-w-xl">
           Eximus Energy is led and supported by seasoned professionals with
           broad upstream, midstream, downstream, project management, operations
           and asset development experience in Nigeria and around the world. 
@@ -57,10 +57,10 @@ const Company = () => {
                 {p.icon}
               </div>
               <div>
-                <p className="text-[16px] font-semibold text-[var(--background)] mb-1">
+                <p className="text-md font-medium text-gray-500 leading-relaxed max-w-xl">
                   {p.title}
                 </p>
-                <p className="text-[16px] leading-relaxed text-[var(--input-border)]">
+                <p className="text-sm text-gray-500 leading-relaxed max-w-xl">
                   {p.desc}
                 </p>
               </div>

@@ -31,11 +31,10 @@ const Navbar = () => {
       children: [
         { name: "What we do", path: "/services/action" },
         { name: "Core Capabilities", path: "/services/capability" },
-        { name: "Gas Commercialization", path: "/services/commercialization" },
-        { name: "Strategic Advantages", path: "/services/advantages" },
+        { name: "Gas Commercialization", path: "/services/commerce" },
+        { name: "Strategic Advantages", path: "/services/strategy" },
       ],
     },
-    { name: "Solutions", path: "/solutions" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -127,7 +126,7 @@ const Navbar = () => {
           <div className="hidden md:flex">
             <Button
               title="GET IN TOUCH"
-              className="bg-red hover:bg-red text-white"
+              className="bg-green-600 hover:bg-green-700 text-white"
               onClick={() => router.push("/contact")}
             />
           </div>

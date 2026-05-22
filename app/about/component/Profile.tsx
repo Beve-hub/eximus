@@ -1,14 +1,22 @@
 const Profile = () => {
   return (
     <section className="py-8">
-      <p className=" text-3xl font-light leading-[1.05] text-[var(--input-border)]">
+      <div className="flex items-center gap-3 mb-5">
+          <div className="h-px w-8 bg-red-700" />
+          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-red-700">
+            Our Company
+          </p>
+        </div>
+      <h2 className="text-3xl md:text-4xl font-black uppercase leading-none tracking-tight text-gray-900 mb-5">
         CORPORATE PROFILE
-      </p>
-       <div className="w-18 h-px bg-[var(--accent)]" />
-      <p className="text-[16px]  leading-relaxed text-[var(--input-border)] mt-2 mb-8">
+      </h2>
+       
+      <p className="text-sm text-gray-500 leading-relaxed max-w-xl my-4">
         Engineering solutions today. Energy tomorrow.
       </p>
-      <p className="text-[16px] font-light leading-relaxed text-[var(--input-border)]">
+
+      <div className="w-18 h-px bg-[var(--accent)]" />
+      <p className="text-md text-gray-500 leading-relaxed my-6">
         Eximus Energy is a Nigerian-focused integrated energy and EPCM company
         providing engineering, procurement, construction, project management,
         operations support and strategic advisory services across the oil and

@@ -31,11 +31,10 @@ var Navbar = function () {
             children: [
                 { name: "What we do", path: "/services/action" },
                 { name: "Core Capabilities", path: "/services/capability" },
-                { name: "Gas Commercialization", path: "/services/commercialization" },
-                { name: "Strategic Advantages", path: "/services/advantages" },
+                { name: "Gas Commercialization", path: "/services/commerce" },
+                { name: "Strategic Advantages", path: "/services/strategy" },
             ]
         },
-        { name: "Solutions", path: "/solutions" },
         { name: "Contact", path: "/contact" },
     ];
     var isActive = function (path) { return (pathname === path ? "font-semibold" : ""); };
@@ -62,7 +61,7 @@ var Navbar = function () {
                                 React.createElement("div", { className: "absolute left-0 top-1/2 -translate-y-1/2 w-0 h-0.5 bg-[var(--accent)] group-hover/item:w-1 transition-all" }))); }))))) : (React.createElement(link_1["default"], { key: link.path, href: link.path, style: activeStyle(link.path), className: "text-[15px] font-medium transition " + isActive(link.path) }, link.name));
                 })),
                 React.createElement("div", { className: "hidden md:flex" },
-                    React.createElement(Button_1["default"], { title: "GET IN TOUCH", className: "bg-red hover:bg-red text-white", onClick: function () { return router.push("/contact"); } })),
+                    React.createElement(Button_1["default"], { title: "GET IN TOUCH", className: "bg-green-600 hover:bg-green-700 text-white", onClick: function () { return router.push("/contact"); } })),
                 React.createElement("div", { className: "flex md:hidden items-center gap-3" },
                     React.createElement("button", { "aria-label": "Toggle menu", onClick: function () { return setMenuOpen(function (prev) { return !prev; }); }, className: "p-2 rounded-xl transition", style: { color: "var(--background)" } }, menuOpen ? (React.createElement(md_1.MdOutlineCancel, { className: "h-6 w-6" })) : (React.createElement(md_1.MdMenu, { className: "h-6 w-6" }))))),
             menuOpen && (React.createElement("div", { className: "md:hidden mt-6 flex flex-col gap-4 pb-6 border-t border-gray-200 pt-6" },

@@ -1,7 +1,8 @@
 import Footer from "@/component/layout/Footer";
 import Navbar from "@/component/layout/Navbar";
 import TopLayout from "@/component/layout/TopLayout";
-import Action from "./Action";
+import StrategyComponent from "./component/StrategyComponent";
+
 
 const page = () => {
   return (
@@ -16,7 +17,7 @@ const page = () => {
             currentTitle="Services"
           />
           <div className="max-w-7xl w-full mx-auto py-4 px-4 sm:px-6 lg:px-4">
-            <Action />
+            <StrategyComponent/>
           </div>
           
         </main>

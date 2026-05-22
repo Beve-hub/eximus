@@ -1,24 +1,31 @@
-import Footer from '@/component/layout/Footer';
-import Navbar from '@/component/layout/Navbar';
-import React from 'react'
-
+import React from "react";
+import Action from "../Action";
+import TopLayout from "@/component/layout/TopLayout";
+import Navbar from "@/component/layout/Navbar";
+import Footer from "@/component/layout/Footer";
 
 const page = () => {
-    return (
-        <>
+  return (
+    <>
       <div className="min-h-screen flex flex-col">
         <Navbar />
 
-        <main className="flex-1 max-w-7xl mx-auto px-4 py-16 w-full">
-          <div className="text-center">
-            
+        <main className="w-full">
+          <TopLayout
+            heroTitle="Services"
+            subtitle="Home"
+            currentTitle="Services"
+          />
+          <div className="max-w-7xl w-full mx-auto py-4 px-4 sm:px-6 lg:px-4">
+            <Action />
           </div>
+          
         </main>
 
         <Footer />
       </div>
     </>
-    )
-}
+  );
+};
 
-export default page
+export default page;

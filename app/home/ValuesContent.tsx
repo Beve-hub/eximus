@@ -42,10 +42,10 @@ const ValuesContent: React.FC = () => {
             <FaHandshake className="text-lg" />
             OUR COMMITMENT
           </div>
-          <p className="text-3xl font-light md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-black uppercase leading-none tracking-tight text-gray-900 mb-5">
             Values and Commitments
-          </p>
-          <p className="max-w-xl mx-auto text-xl text-gray-600 leading-relaxed">
+          </h2>
+          <p className="max-w-xl mx-auto text-md text-gray-600 leading-relaxed ">
             Disciplined execution with <span className="text-green-600 font-semibold">people</span>, 
             <span className="text-green-600 font-semibold"> environment</span>, and 
             <span className="text-green-600 font-semibold"> performance</span> at the center.
@@ -63,11 +63,11 @@ const ValuesContent: React.FC = () => {
                 <item.icon className="text-3xl" />
               </div>
               
-              <h3 className="text-xl font-semibold text-gray-900 mb-3 leading-tight">
+              <h3 className="text-md font-light text-gray-900 mb-3 leading-tight">
                 {item.title}
               </h3>
               
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 font-light text-sm leading-relaxed">
                 {item.body}
               </p>
             </div>
