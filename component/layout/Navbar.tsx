@@ -108,10 +108,10 @@ const Navbar = () => {
               <FaLocationDot />
             </div>
             <div>
-              <p className="font-medium text-gray-900 text-sm">
+              <p className="font-medium text-gray-900 text-md">
                 Lagos, Nigeria
               </p>
-              <p className="text-xs text-gray-500">
+              <p className="text-sm text-gray-500">
                 12 Admiralty Way, Lekki Phase 1
               </p>
             </div>
@@ -153,7 +153,7 @@ const Navbar = () => {
           ${scrolled ? "bg-white shadow-lg border-b border-gray-200" : "bg-green-600"}
         `}
       >
-        <div className="max-w-6xl mx-auto px-4 md:px-6">
+        <div className="max-w-5xl mx-auto px-4 md:px-6">
           <div className="flex justify-between items-center h-16 md:h-14">
             {/* Logo — always visible on mobile; on desktop only when scrolled */}
             <button
