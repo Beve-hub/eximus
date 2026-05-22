@@ -1,6 +1,8 @@
+// app/layout.tsx
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { NavigationLoaderProvider } from "@/component/context/NavigationLoader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,7 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Eximus",
-  description: "Eximus energy is a Nigerian-focused integrated energy and EPCM company providing engineering, procurement, construction, project management, operations support and strategic advisory services across the oil and gas value chain.",
+  description:
+    "Eximus energy is a Nigerian-focused integrated energy and EPCM company...",
 };
 
 export default function RootLayout({
@@ -27,7 +30,11 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <NavigationLoaderProvider>
+          {children}
+          </NavigationLoaderProvider>
+      </body>
     </html>
   );
 }
