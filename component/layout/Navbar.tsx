@@ -283,11 +283,7 @@ const Navbar = () => {
 
             {/* Mobile: GET IN TOUCH + Hamburger */}
             <div className="flex items-center gap-3 md:hidden">
-              <Button
-                title="GET IN TOUCH"
-                className={`text-xs font-bold px-3 py-1.5 rounded-md transition-colors ${scrolled ? "bg-green-600 text-white hover:bg-green-700" : "bg-white text-green-700 hover:bg-green-50"}`}
-                onClick={() => handleNav("/contact")}
-              />
+             
               <button
                 onClick={() => setMenuOpen(!menuOpen)}
                 className={`p-1.5 rounded-md transition-colors ${scrolled ? "text-gray-800 hover:bg-gray-100" : "text-white hover:bg-white/20"}`}
@@ -366,28 +362,12 @@ const Navbar = () => {
               )}
             </div>
           ))}
-
-          {/* Contact info in mobile menu */}
-          <div className="mt-6 pt-6 border-t border-gray-100 flex flex-col gap-3">
-            <p className="flex items-center gap-2 text-sm text-gray-600">
-              <span className="text-red-600">
-                <IoIosCall />
-              </span>
-              +234 803 000 0000
-            </p>
-            <p className="flex items-center gap-2 text-sm text-gray-600">
-              <span className="text-red-600">
-                <MdOutlineMailOutline />
-              </span>
-              info@yourcompany.com
-            </p>
-            <p className="flex items-center gap-2 text-sm text-gray-600">
-              <span className="text-red-600">
-                <FaLocationDot />
-              </span>
-              12 Admiralty Way, Lekki Phase 1
-            </p>
-          </div>
+ <Button
+                title="GET IN TOUCH"
+                className="text-xs font-bold px-3 py-4 rounded-md transition-colors bg-green-600 text-white "
+                onClick={() => handleNav("/contact")}
+              />
+      
         </div>
       </div>
     </nav>
